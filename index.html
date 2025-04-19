@@ -3,56 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Landing Page</title>
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        } 
-        .container {
-            max-width: 600px;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1 {
+        header {
+            background: linear-gradient(90deg, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
             font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background: #f9f9f9;
+        }
+        .feature {
+            text-align: center;
+            max-width: 300px;
+        }
+        .feature h3 {
+            font-size: 1.5rem;
             margin-bottom: 10px;
         }
-        p {
-            font-size: 1.2rem;
-            line-height: 1.6;
+        .feature p {
+            font-size: 1rem;
+            color: #555;
         }
-        a {
-            display: inline-block;
-            margin-top: 20px;
+        .cta {
+            background: #4facfe;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .cta h2 {
+            font-size: 2rem;
+            margin: 0 0 10px;
+        }
+        .cta button {
+            background: white;
+            color: #4facfe;
+            border: none;
             padding: 10px 20px;
             font-size: 1rem;
-            color: white;
-            text-decoration: none;
-            background: #ff7e5f;
+            cursor: pointer;
             border-radius: 5px;
-            transition: background 0.3s ease;
         }
-        a:hover {
-            background: #feb47b;
+        .cta button:hover {
+            background: #e0e0e0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Website</h1>
-        <p>Thank you for visiting! Explore and enjoy the content we have to offer.</p>
-        <a href="#explore">Explore Now</a>
-        joseph
-    </div>
+    <header>
+        <h1>Welcome to Our Website</h1>
+        <p>Your success starts here</p>
+    </header>
+    <section class="features">
+        <div class="feature">
+            <h3>Feature One</h3>
+            <p>Discover the amazing benefits of our product.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature Two</h3>
+            <p>Experience unmatched quality and performance.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature Three</h3>
+            <p>Join a community of satisfied customers.</p>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Ready to Get Started?</h2>
+        <button>Sign Up Now</button>
+    </section>
+    <footer>
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
